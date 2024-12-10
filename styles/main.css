@@ -26,3 +26,75 @@ body {
 		margin: 100px 25px 0px 25px !important;
 	}
 }
+
+/* new code */
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.menu-lateral {
+	width: 12vw;
+	min-width: 175px;
+	height: 100vh;
+	position: sticky;
+	padding: 2.7%;
+}
+
+.nav-lateral p {
+  font-family: "Monaco", "Menlo", monospace !important;
+  text-decoration: none;
+  color: rgb(72, 86, 91);
+  display: block;
+  margin-bottom: 40px; 
+}
+
+.nav-lateral a {
+  font-family: "Monaco", "Menlo", monospace !important;
+  text-decoration: none;
+  color: rgb(72, 86, 91);
+ 
+  display: block;
+  margin-bottom: 10px; 
+}
+
+.nav-lateral a:hover {
+	color: rgb(26, 28, 29);
+}
+
+.page-normal {
+  width: calc(100vw - 12vw);
+  padding: 2%;
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  margin-bottom: 5%;
+}
+
+.img-main-page{
+  max-width: 350px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: 5%;
+  margin-top: 6.5%;
+}
+
+.main-paragraphs {
+  display: block;
+  margin-top: 2.5%;
+	
+  max-width: 500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.main-paragraphs p {
+  font-family: 'Futura std', sans-serif;
+  text-align: justify;
+}
