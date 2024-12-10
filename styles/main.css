@@ -29,6 +29,48 @@ body {
 
 /* new code */
 
+.hamburger {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+  display: none;
+}
+
+/* Hamburger icon lines */
+.hamburger-line {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+/* When the menu is open (active state) */
+.hamburger.open .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.open .line2 {
+  opacity: 0;
+}
+
+.hamburger.open .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 768px) {
+  .menu-lateral {
+    display: none;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+}
+
 .container {
   display: flex;
   height: 100vh;
