@@ -69,6 +69,24 @@ body {
   .hamburger {
     display: block;
   }
+  
+  .full-mobile {
+    width: 100vw!important;
+    display: block!important;
+    margin-right: 0!important;
+    margin-left: 0!important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+    max-width: 100vw!important;
+    justify-content: center!important;
+    text-align: center!important;
+  }
+  
+  .page-normal {
+    margin: 0!important;
+    padding: 0!important;
+    text-align: center!important;
+  }
 }
 
 .container {
@@ -80,7 +98,7 @@ body {
 	width: 12vw;
 	min-width: 175px;
 	height: 100vh;
-	position: sticky;
+	position: fixed;
 	padding: 2.7%;
 }
 
@@ -106,7 +124,8 @@ body {
 }
 
 .page-normal {
-  width: calc(100vw - 12vw);
+  margin-left: calc(16vw);
+  width: calc(100vw - 16vw);
   padding: 2%;
   position: relative;
   
